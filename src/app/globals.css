@@ -2,26 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.all,.cart,.logo{
+    @apply flex justify-center items-center
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.icon{
+    @apply mx-auto my-1
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.assist{
+    @apply text-[14px] sm:text-[16px] xl:text-[18px] text-center font-bold font-sans bg-clip-text text-transparent bg-gradient-to-r from-pink-700  to-cyan-400 mx-auto
 }
